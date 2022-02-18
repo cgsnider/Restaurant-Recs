@@ -19,7 +19,7 @@
 
 ## Methods: What algorithms or methods are you going to use to solve the problems. (Note: Methods may change when you start implementing them which is fine)
 
-#### 
+
 <ul>
   <li>There are mainly two methods for the recommendation system - content based filtering method and collaborative filtering method (Nagarnaik et. al. ) 
 For the data cleaning processes, we will implement the Principal component analysis. To analyze the data, the light FM package that implements both the combination of collaborative filtering method and content based filtering method will be used.</li>
