@@ -10,7 +10,7 @@
 
 ## Problem definition: Why there is a problem here or what is the motivation of the project?
 
-#### People usually have a hard time deciding which restaurant to go for their meal. There are several factors that affect the restaurant a person desires to go for that particular day. Current methods of restaurant recommendation mostly use one or two features at maximum to make such recommendations. We are trying to build a recommendation system that takes into account more factors to give a more personalized recommendation to the individual. 
+<div> People usually have a hard time deciding which restaurant to go for their meal. There are several factors that affect the restaurant a person desires to go for that particular day. Current methods of restaurant recommendation mostly use one or two features at maximum to make such recommendations. We are trying to build a recommendation system that takes into account more factors to give a more personalized recommendation to the individual. </div>
 
 ## Methods: What algorithms or methods are you going to use to solve the problems. (Note: Methods may change when you start implementing them which is fine)
 
