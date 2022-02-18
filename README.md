@@ -5,6 +5,14 @@
 
 #### In the city there are countless restaurants to choose from with more options than a person wants to consider whenever they grab lunch. Restaurant recommendation system to recommend people nearby restaurants that meet their needs and preferences. Our system will take several factors into consideration to make these recommendations. These factors include location, price, hours of service, reviews, diversity of food, revenue, weather, etc.
 
+#### Literature Review 
+<ol>
+  <li>Second paper: developed a mobile app that recommends the restaurants utilizing the naive bayes classifier algorithm, specifically multinomial Bernoulli model. </li>
+  
+  
+  
+ </ol>
+
 ## Problem definition: Why there is a problem here or what is the motivation of the project?
 
 #### People usually have a hard time deciding which restaurant to go for their meal. There are several factors that affect the restaurant a person desires to go for that particular day. Current methods of restaurant recommendation mostly use one or two features at maximum to make such recommendations. We are trying to build a recommendation system that takes into account more factors to give a more personalized recommendation to the individual. 
