@@ -26,7 +26,7 @@ For the data cleaning processes, we will implement the Principal component analy
 
 ## Potential results and Discussion (The results may change while you are working on the project and it is fine; that's why it is called research)
 
-#### The system will predict the ratings of the consumers based on the users’ choice of several factors. Then, the system will also return the ranked list. 
+<div> The system will predict the ratings of the consumers based on the users’ choice of several factors. Then, the system will also return the ranked list. </div>
 
 ## At least three references (preferably peer reviewed). You need to properly cite the references on your proposal.
 
