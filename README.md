@@ -1,15 +1,8 @@
 # Project Proposal Machine Learning CS 4641
 
 
-<iframe
-    width="640"
-    height="480"
-    src="https://www.youtube.com/watch?v=yKE7-i9g_zU"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
+
+[[Proposal Video]](https://www.youtube.com/watch?v=yKE7-i9g_zU)
 
 ## Introduction/Background: A quick introduction of your topic and mostly literature review of what has been done in this area. You can briefly explain your dataset and its features here too.
 
