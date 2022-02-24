@@ -31,6 +31,12 @@ For the data cleaning processes, we will implement the Principal component analy
 
 <div> The system will predict the ratings of the consumers based on the users’ choice of several factors. Then, the system will also return the ranked list. </div>
 
+## Project member's responsibility
+![Team member's responsibility](Proposed Timeline.png)
+
+## Proposed timeline
+![Project Proposal Timeline](TeamResponsibility.png)
+
 ## At least three references (preferably peer reviewed). You need to properly cite the references on your proposal.
 
 <ul>
