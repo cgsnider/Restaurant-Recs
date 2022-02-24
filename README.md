@@ -4,14 +4,14 @@
 
 [[Proposal Video]](https://www.youtube.com/watch?v=yKE7-i9g_zU)
 
-## Introduction/Background: A quick introduction of your topic and mostly literature review of what has been done in this area. You can briefly explain your dataset and its features here too.
+## Introduction/Background
 
 <div> In the city there are countless restaurants to choose from with more options than a person wants to consider whenever they grab lunch. Restaurant recommendation system to recommend people nearby restaurants that meet their needs and preferences. Our system will take several factors into consideration to make these recommendations. These factors include location, price, hours of service, reviews, diversity of food, revenue, weather, etc. </div>
 
 #### Literature Review (COME BACK)
 
 
-## Problem definition: Why there is a problem here or what is the motivation of the project?
+## Problem definition
 
 <div> People usually have a hard time deciding which restaurant to go for their meal. There are several factors that affect the restaurant a person desires to go for that particular day. Current methods of restaurant recommendation mostly use one or two features at maximum to make such recommendations. We are trying to build a recommendation system that takes into account more factors to give a more personalized recommendation to the individual. </div>
 
@@ -27,7 +27,7 @@ For the data cleaning processes, we will implement the Principal component analy
   
 </ul>
 
-## Potential results and Discussion (The results may change while you are working on the project and it is fine; that's why it is called research)
+## Potential results and Discussion 
 
 <div> The system will predict the ratings of the consumers based on the users’ choice of several factors. Then, the system will also return the ranked list. </div>
 
@@ -38,7 +38,7 @@ For the data cleaning processes, we will implement the Principal component analy
 ## Proposed timeline
 ![Project Proposal Timeline](TeamResponsibility.png)
 
-## At least three references (preferably peer reviewed). You need to properly cite the references on your proposal.
+## References 
 
 <ul>
 <li>Varatharajan, N., Guruprasad, J., & Mathumitha, K. (2020). Restaurant Recommendation System Using Machine Learning. International Educational Applied Research Journal, 4(3), 1-4.
