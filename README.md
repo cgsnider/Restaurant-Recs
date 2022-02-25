@@ -8,8 +8,9 @@
 
 <div> In the city there are countless restaurants to choose from with more options than a person wants to consider whenever they grab lunch. Restaurant recommendation system to recommend people nearby restaurants that meet their needs and preferences. Our system will take several factors into consideration to make these recommendations. These factors include location, price, hours of service, reviews, diversity of food, revenue, weather, etc. </div>
 
-# Literature Review
-
+### Literature Review
+<div> In preparation for building the recommendation system, a number of preexisting  literature was consulted.</div>
+<div> The literature suggests that while context aware restaurant recommenders exists, most of them predominately look for location information (Varatharajan et al, 2020) This shows an opening for recommenders that look at a variety of factors. Additional research revealed that at least in the vegetarian food industry the factors of value, food , service, and atmosphere were strong indicators that a customer would be satisfied at restaurant (Lu & Gursoy, 2017). This information reveals key categories of factors that a restaurant recommendation system could target. Further, there has been research into designing an phone application for a content based recommendation that changes to user behavior (Gupta & Kuldeep, 2013). This design can provide an initial intuition on approaching the design of a restaurant recommendation, particularly how to handle the model specializing to each user.</div>
 
 ## Problem definition
 
