@@ -1,6 +1,6 @@
 #DataSet
-    /yelp_reviews/*.json
-    /yelp_reviews/*.pdf
+yelp_reviews/*.json
+yelp_reviews/*.pdf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
