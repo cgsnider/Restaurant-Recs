@@ -2,6 +2,7 @@
 data/yelp_reviews/*.json
 data/yelp_reviews/*.pdf
 data/yelp_reviews_archive.zip
+data/cleaned/*.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
