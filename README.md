@@ -23,8 +23,6 @@ For the data cleaning processes, we will implement the Principal component analy
 <li>Data such as Location, average price of the items at the restaurant, Hours of service, categories of food they serve, reviews from users and critiques, diversity of food items, Revenue of the restaurant and the statistics such as mean median scores.</li>
 <li>A study shows that the attributes of a person’s preferences, a restaurant’s popularity, and restaurant price were able to strongly predict how consumers predict restaurants, and that a consumer’s preferences can be predicted by their and similar consumers’ past behaviors (Nilashi et. al.).</li>
 
-![Before feature reduction](feature_plot.png)
-![After feature reduction(reduced_plot.png)
 
   
 </ul>
