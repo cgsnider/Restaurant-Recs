@@ -54,11 +54,11 @@ Feature Reduction:
 We used a covariance filtering threshold method to reduce the number of features related to the restaurants. The threshold was based on the covariance of the feature and the star rating of the restaurant. We reduced the number of features from 34 (excluding the star rating) to 15 features (excluding the star rating) such as ‘latitude’ and ‘touristy'. The heat maps for both before and after feature reduction can be seen below. For the final presentation, we plan to adjust the threshold to see if different constraints lead to more accurate models. We want to explore different methods of feature reduction to see if that would have any effect on the model. 
 
 Before Feature Reduction:
-![Plot before](feature_plot.png)
+![Plot before](feature_plot.png = 250x)
 
 
 After Feature Reduction:
-![Plot After](reduced_plot.png)
+![Plot After](reduced_plot.png = 250x)
 
 Training Model:
 Before the model training, we split our interactions matrix into the training and testing set. Specifically, we used 80% of the data for training and 20% of the data for testing. After this step, we set the loss function to bpr for our model and did model fitting using the training part of interactions, item_features, and epoch of 30. Some of the other parameters for fit include sample_weight, epochs, num_threads, and verbose. For these parameters, values of None, 1, 1, False were assigned respectively. Doing the things mentioned above took care of our model training process. 
