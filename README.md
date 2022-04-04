@@ -39,6 +39,34 @@ For the data cleaning processes, we will implement the Principal component analy
 
 ## Proposed timeline
 ![Project Proposal Timeline](TeamResponsibility.png)
+## Midterm Report
+Midterm Updates
+
+Dataset:
+The initial dataset that we chose for the dataset was the Restaurant Recommendation Challenge from Kaggle. While this dataset has more than 45,000 customers in total, the features of each JSON are mostly small, not directly related to the ratings, and/or have too much incomplete data. The Yelp dataset was overall more complete and had much less incomplete data. There were also many features and the majority of them proved to be relevant to our model.
+
+Data Preprocessing:
+The original JSON files were over 6 GB with largely irrelevant information. The first dataset cleaned was the Business dataset. This dataset contained attributes such as latitude, category, attributes, and etc. Restaurant dataset was created by filtering out any business that did not list themselves as “Restaurant” or “Food” and were marked as opened. Then any relevant columns such as average stars were preserved. Processing was done on the attribute column so that the most common 50% of attributes were made into their own column on the Restaurant table. This left the restaurant table as a dataset with all the features of a restaurant as the columns. However, most of these features had missing values. Then using the developer’s understanding of restaurant norms a list of default values for each feature were decided. The criteria for the default values were based on norms in the United States from what would be from an unknown restaurant. Once the default values were made the features for the restaurants were decided this dataset was ready for feature reduction. The Business dataset started at 118.9MB and finished as Restaurant dataset at 45.6 MB.
+
+The second dataset to be cleaned was the review dataset. This dataset was filtered so that only reviews that were about a business in the restaurant dataset were left. Then the irrelevant columns were dropped leaving only the corresponding business and user ids as well as the star ranking. This dataset began before cleaning as 5.34GB and ended as a 485.9 MB file. 
+
+Feature Reduction:
+We used a covariance filtering threshold method to reduce the number of features related to the restaurants. The threshold was based on the covariance of the feature and the star rating of the restaurant. We reduced the number of features from 34 (excluding the star rating) to 15 features (excluding the star rating) such as ‘latitude’ and ‘touristy'. The heat maps for both before and after feature reduction can be seen below. For the final presentation, we plan to adjust the threshold to see if different constraints lead to more accurate models. We want to explore different methods of feature reduction to see if that would have any effect on the model. 
+
+Before Feature Reduction:
+![Plot before](feature_plot.png)
+
+
+After Feature Reduction:
+![Plot After](reduced_plot.png)
+
+Training Model:
+Before the model training, we split our interactions matrix into the training and testing set. Specifically, we used 80% of the data for training and 20% of the data for testing. After this step, we set the loss function to bpr for our model and did model fitting using the training part of interactions, item_features, and epoch of 30. Some of the other parameters for fit include sample_weight, epochs, num_threads, and verbose. For these parameters, values of None, 1, 1, False were assigned respectively. Doing the things mentioned above took care of our model training process. 
+
+
+Discussion:
+The metrics we are using to evaluate our model are the area under the ROC curve and the precision at k. ROC stands for receiver operating characteristic curve. This curve plots the false positive rate vs the true positive rate. We use the area under the curve (AUC) to determine the accuracy of our model. It measures the two-dimensional area under the entire curve of ROC from 0 to 1.  Our average AUC for the training model was 0.8882 and the average for the test model was 0.8710. This indicates that our model was not overfitted and it is fairly accurate. The precision at k was lower than expected. For the test model the precision at k was 0.0044. After further inspection, it was most probably due to the fact that many users have not interacted with many restaurants. The LightFM package gives a 0 when there are no interactions at that point. This may have skewed our results and it is something we are going to look into for our final presentation. 
+
 
 ## References 
 
