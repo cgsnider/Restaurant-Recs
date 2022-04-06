@@ -58,12 +58,15 @@ Before Feature Reduction:
 After Feature Reduction:
 <img src="reduced_plot.png" alt="drawing" width="650"/>
 
+Model Quick Overview:
+For this model we used light fm. Light FM is a hybrid recommendation model using traits of both a collaborative and content based recommendation systems. This model uses supervised learning.
+
 Training Model:
 Before the model training, we split our interactions matrix into the training and testing set. Specifically, we used 80% of the data for training and 20% of the data for testing. After this step, we set the loss function to bpr for our model and did model fitting using the training part of interactions, item_features, and epoch of 30. Some of the other parameters for fit include sample_weight, epochs, num_threads, and verbose. For these parameters, values of None, 1, 1, False were assigned respectively. Doing the things mentioned above took care of our model training process. 
 
 
 Discussion:
-The metrics we are using to evaluate our model are the area under the ROC curve and the precision at k. ROC stands for receiver operating characteristic curve. This curve plots the false positive rate vs the true positive rate. We use the area under the curve (AUC) to determine the accuracy of our model. It measures the two-dimensional area under the entire curve of ROC from 0 to 1.  Our average AUC for the training model was 0.8882 and the average for the test model was 0.8710. This indicates that our model was not overfitted and it is fairly accurate. The precision at k was lower than expected. For the test model the precision at k was 0.0044. After further inspection, it was most probably due to the fact that many users have not interacted with many restaurants. The LightFM package gives a 0 when there are no interactions at that point. This may have skewed our results and it is something we are going to look into for our final presentation. 
+The metrics we are using to evaluate our model are the area under the ROC curve and the precision at k. ROC stands for receiver operating characteristic curve. This curve plots the false positive rate vs the true positive rate. We use the area under the curve (AUC) to determine the accuracy of our model. It measures the two-dimensional area under the entire curve of ROC from 0 to 1.  Our average AUC for the training model was 0.8882 and the average for the test model was 0.8710. This indicates that our model was not overfitted and it is fairly accurate. While there is potential for improvement, at this stage of development 0.8710 far exceeds random chance. The precision at k was lower than expected. For the test model the precision at k was 0.0044. After further inspection, it was most probably due to the fact that many users have not interacted with many restaurants. The LightFM package gives a 0 when there are no interactions at that point, and thus due to the scale of the datasets there were bound to be many of these cases. This may have skewed our results and it is something we are going to look into for our final presentation. 
 
 
 ## References 
